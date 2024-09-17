@@ -5579,7 +5579,7 @@
 		)
 		(uuid "a7659579-8c24-4a07-a652-30e9f24169b5")
 	)
-	(text "TO-DO:\n\n- BOM needs to include both the fuse and fuse socket\n- all symbols need to contain LCSC part number\n- add every datasheet link to BOM\n- logic level conversion (IC to ESP)\n\nDONE:\n- 3.3V voltage regulator for MCU\n"
+	(text "TO-DO:\n\n- logic level conversion (IC to ESP)\n- BOM needs to include both the fuse and fuse socket\n- all symbols need to contain LCSC part number\n- add every datasheet link to BOM\n\nDONE:\n\n- 3.3V voltage regulator for MCU\n"
 		(exclude_from_sim no)
 		(at 226.822 155.194 0)
 		(effects
