@@ -1,4 +1,4 @@
-23787698206999170
+23789424957617484
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64441,6 +64441,13 @@ FH1-200CK-G
 0
 2
 2
+Library
+KF7.62-2P
+
+
+0
+0
+0
 Library
 R_2512_Shunt
 Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
