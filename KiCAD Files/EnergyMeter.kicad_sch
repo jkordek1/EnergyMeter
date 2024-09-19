@@ -6833,7 +6833,7 @@
 		)
 		(uuid "a7659579-8c24-4a07-a652-30e9f24169b5")
 	)
-	(text "TO-DO:\n- add footprints\n- BOM needs to include both the fuse and fuse socket\n- BOM needs to include jumper\n- all symbols need to contain LCSC part number\n- add every datasheet link to BOM\n- vidjeti što imam od ovih komponenata\n"
+	(text "TO-DO:\n- priključnice pogledati\n- BOM needs to include both the fuse and fuse socket\n- BOM needs to include jumper\n- add every datasheet link to BOM\n- vidjeti što imam od ovih komponenata\n"
 		(exclude_from_sim no)
 		(at 227.33 153.162 0)
 		(effects
@@ -8348,7 +8348,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:FH1-200CK-G"
 			(at 53.34 26.67 0)
 			(effects
 				(font
@@ -8568,7 +8568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 26.67 153.67 0)
 			(effects
 				(font
@@ -8796,7 +8796,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
 			(at 172.72 106.68 0)
 			(effects
 				(font
@@ -9089,7 +9089,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:R_2512_Shunt"
 			(at 49.022 86.36 90)
 			(effects
 				(font
@@ -9761,7 +9761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 68.072 33.02 90)
 			(effects
 				(font
@@ -10109,7 +10109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:R_2512_Shunt"
 			(at 60.452 86.36 90)
 			(effects
 				(font
@@ -10267,7 +10267,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:R_2512_Shunt"
 			(at 37.592 86.36 90)
 			(effects
 				(font
@@ -11362,7 +11362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:R_2512_Shunt"
 			(at 71.882 86.36 90)
 			(effects
 				(font
@@ -11439,7 +11439,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:YDUU9.8-103L0301"
 			(at 118.11 32.004 0)
 			(effects
 				(font
@@ -11666,7 +11666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal"
 			(at 139.7 149.86 0)
 			(effects
 				(font
