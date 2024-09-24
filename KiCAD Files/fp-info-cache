@@ -1,4 +1,4 @@
-23789424957617484
+23791152160811766
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64446,8 +64446,8 @@ KF7.62-2P
 
 
 0
-0
-0
+2
+2
 Library
 R_2512_Shunt
 Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
@@ -64455,6 +64455,13 @@ resistor handsolder
 0
 2
 2
+Library
+SOP-8_3.9x4.9mm_P1.27mm_custom
+SOP, 8 Pin (http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf#page=79), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+8
+8
 Library
 YDUU9.8-103L0301
 
