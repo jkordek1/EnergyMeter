@@ -6915,7 +6915,7 @@
 		)
 		(uuid "a7659579-8c24-4a07-a652-30e9f24169b5")
 	)
-	(text "TO-DO:\n- BOM needs to include both the fuse and fuse socket\n- BOM needs to include jumper\n- add every datasheet link to BOM\n"
+	(text "TO-DO:\n- BOM needs to include both the fuse and fuse socket\n- BOM needs to include jumper\n- add every datasheet link to BOM\n- github documentation\n- kućište"
 		(exclude_from_sim no)
 		(at 227.33 153.162 0)
 		(effects
