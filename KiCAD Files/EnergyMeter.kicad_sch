@@ -1904,23 +1904,23 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
 			(pin_names
-				(offset 1.016)
-			)
+				(offset 1.016) hide)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1945,7 +1945,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1963,7 +1963,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1972,9 +1972,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -1982,6 +1982,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -3309,6 +3329,69 @@
 				)
 			)
 		)
+		(symbol "Symbol_Library:Jumper"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(property "Reference" "JP"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy -3.81 0) (xy -3.81 6.35) (xy -2.54 6.35) (xy -2.54 7.62) (xy -3.81 7.62) (xy -3.81 8.89)
+						(xy 3.81 8.89) (xy 3.81 7.62) (xy 2.54 7.62) (xy 2.54 6.35) (xy 3.81 6.35) (xy 3.81 0) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
 		(symbol "Symbol_Library:S8050-SOT23"
 			(pin_names
 				(offset 0) hide)
@@ -4472,12 +4555,32 @@
 		(uuid "5dca3012-3257-428a-9892-969a3176cb1c")
 	)
 	(no_connect
+		(at 118.11 187.96)
+		(uuid "7762ac92-d952-4945-8949-0ae67bc95635")
+	)
+	(no_connect
+		(at 55.88 20.32)
+		(uuid "85500b6c-1209-4461-9fe7-e359400290c4")
+	)
+	(no_connect
 		(at 200.66 104.14)
 		(uuid "8d68da8e-da8d-4093-9fb9-5ee48ff8b2a3")
 	)
 	(no_connect
 		(at 231.14 96.52)
 		(uuid "9fa9243c-6ddf-41f3-a07e-6a9673ef81f4")
+	)
+	(no_connect
+		(at 137.16 187.96)
+		(uuid "b1c49394-1026-4767-a114-93dea8a139cd")
+	)
+	(no_connect
+		(at 50.8 20.32)
+		(uuid "b7187897-67b3-40ca-9c6b-060d54a3d7bf")
+	)
+	(no_connect
+		(at 80.01 187.96)
+		(uuid "b7c0eeb4-4521-4209-82f5-8241c24723cb")
 	)
 	(no_connect
 		(at 200.66 96.52)
@@ -4494,6 +4597,10 @@
 	(no_connect
 		(at 231.14 99.06)
 		(uuid "f4b72b2b-c7bb-4c53-8bb8-2c8bff035f39")
+	)
+	(no_connect
+		(at 99.06 187.96)
+		(uuid "fead76d1-6f5b-4a4f-8aec-8851903cf8d9")
 	)
 	(wire
 		(pts
@@ -5015,6 +5122,16 @@
 		)
 		(uuid "3ac88685-7479-4c83-8722-ba052da74497")
 	)
+	(polyline
+		(pts
+			(xy 156.21 190.5) (xy 74.93 190.5)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3b5e266b-f84f-4a78-8d11-ec162d93333c")
+	)
 	(wire
 		(pts
 			(xy 215.9 114.3) (xy 215.9 115.57)
@@ -5075,6 +5192,16 @@
 		)
 		(uuid "3d60a746-8efb-43f1-a993-6a698343cded")
 	)
+	(polyline
+		(pts
+			(xy 156.21 179.07) (xy 74.93 179.07)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3e741782-4672-489b-a715-1ba0039e7744")
+	)
 	(wire
 		(pts
 			(xy 34.29 95.25) (xy 34.29 107.95)
@@ -5134,6 +5261,16 @@
 			(type default)
 		)
 		(uuid "42b7c8e2-4066-45ee-8a38-6cdd1fd89e88")
+	)
+	(polyline
+		(pts
+			(xy 74.93 190.5) (xy 74.93 179.07)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "42bb653f-ec73-4367-9cf3-33860dee1682")
 	)
 	(wire
 		(pts
@@ -5334,6 +5471,16 @@
 			(type dash)
 		)
 		(uuid "57c6070b-8318-48d2-b7a2-3bddf60c7fa9")
+	)
+	(polyline
+		(pts
+			(xy 156.21 190.5) (xy 156.21 179.07)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "581ad856-5a22-413e-8273-1aad1102e120")
 	)
 	(wire
 		(pts
@@ -6877,7 +7024,7 @@
 	)
 	(text "230VAC >> 5VDC"
 		(exclude_from_sim no)
-		(at 78.74 20.574 0)
+		(at 103.378 20.574 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -6915,9 +7062,9 @@
 		)
 		(uuid "a7659579-8c24-4a07-a652-30e9f24169b5")
 	)
-	(text "TO-DO:\n- BOM needs to include both the fuse and fuse socket\n- BOM needs to include jumper\n- add every datasheet link to BOM\n- github documentation\n- kućište"
+	(text "TO-DO:\n- github documentation\n- kućište"
 		(exclude_from_sim no)
-		(at 227.33 153.162 0)
+		(at 257.81 161.798 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8421,7 +8568,7 @@
 				)
 			)
 		)
-		(property "Value" "500mA, SLOW, socketed"
+		(property "Value" "Fuse socket"
 			(at 53.34 28.956 0)
 			(effects
 				(font
@@ -8547,7 +8694,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 99.06 185.42 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -8557,7 +8704,7 @@
 		(fields_autoplaced yes)
 		(uuid "433cf6a0-27d2-4dd8-95aa-2fda87b2be7b")
 		(property "Reference" "H2"
-			(at 101.6 184.1499 0)
+			(at 101.6 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8566,7 +8713,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 101.6 186.6899 0)
+			(at 101.6 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8592,7 +8739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 99.06 185.42 0)
 			(effects
 				(font
@@ -8600,6 +8747,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "af1d6858-a295-43bf-9cb5-315378c8be09")
 		)
 		(instances
 			(project "EnergyMeter"
@@ -10464,7 +10614,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 137.16 185.42 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -10474,7 +10624,7 @@
 		(fields_autoplaced yes)
 		(uuid "83330e17-cc4e-4c90-a6ab-54aad16eeda9")
 		(property "Reference" "H4"
-			(at 139.7 184.1499 0)
+			(at 139.7 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10483,7 +10633,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 139.7 186.6899 0)
+			(at 139.7 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10509,7 +10659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 137.16 185.42 0)
 			(effects
 				(font
@@ -10517,6 +10667,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "997ec2ce-9ba6-4808-a091-b8d041d1d4fb")
 		)
 		(instances
 			(project "EnergyMeter"
@@ -10988,6 +11141,82 @@
 			(project ""
 				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 53.34 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "9ce45c05-1f65-4874-837f-9cce629a8dbb")
+		(property "Reference" "F2"
+			(at 53.34 18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500mA, SLOW"
+			(at 53.34 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 53.34 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C142727"
+			(at 53.34 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9e6a65c-e7ab-43a7-8303-e522afa84230")
+		)
+		(pin "1"
+			(uuid "feb858b1-e784-4db5-b8d8-9dcc4b41b731")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -12538,6 +12767,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Symbol_Library:Jumper")
+		(at 26.67 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "dab680a5-a447-459e-a7f3-6fd2b34d6b7d")
+		(property "Reference" "JP2"
+			(at 24.892 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 31.75 145.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C5305"
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 273.05 33.02 0)
 		(unit 1)
@@ -12904,7 +13205,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 118.11 185.42 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -12914,7 +13215,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6e5dbd8-46b5-4558-94b8-05fe03cd01f8")
 		(property "Reference" "H3"
-			(at 120.65 184.1499 0)
+			(at 120.65 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12923,7 +13224,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 120.65 186.6899 0)
+			(at 120.65 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12949,7 +13250,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 118.11 185.42 0)
 			(effects
 				(font
@@ -12957,6 +13258,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "3dcae50d-7085-4da5-8c11-fbc794b5a5e5")
 		)
 		(instances
 			(project "EnergyMeter"
@@ -13259,7 +13563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 80.01 185.42 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -13269,7 +13573,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffc215c7-a4e8-4c03-8b39-64c47935ec02")
 		(property "Reference" "H1"
-			(at 82.55 184.1499 0)
+			(at 82.55 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13278,7 +13582,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 82.55 186.6899 0)
+			(at 82.55 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13304,7 +13608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 80.01 185.42 0)
 			(effects
 				(font
@@ -13312,6 +13616,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "d1a827fc-2633-4597-956f-59bf9a056349")
 		)
 		(instances
 			(project ""
