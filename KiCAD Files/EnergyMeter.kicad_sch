@@ -7062,17 +7062,6 @@
 		)
 		(uuid "a7659579-8c24-4a07-a652-30e9f24169b5")
 	)
-	(text "TO-DO:\n- github documentation\n- kućište"
-		(exclude_from_sim no)
-		(at 257.81 161.798 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "db24280f-d72c-4e3a-bcec-7e3c47bbe538")
-	)
 	(label "DTR"
 		(at 123.19 149.86 0)
 		(fields_autoplaced yes)
