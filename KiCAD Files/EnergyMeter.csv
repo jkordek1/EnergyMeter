@@ -13,6 +13,7 @@
 "J2","Conn_01x05","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal","1","C19190479"
 "J3","Screw_Terminal_LOAD","Library:KF7.62-2P","1","C707824"
 "JP1","Jumper_2_Bridged","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","1","C706874"
+"JP2","~","","1","C5305"
 "PS1","HLK-PM01","Converter_ACDC:Converter_ACDC_Hi-Link_HLK-PMxx","1","C209903"
 "Q1,Q2","BSS138","Package_TO_SOT_SMD:SOT-23","2","C5250986"
 "Q3,Q4","S8050-SOT23","Package_TO_SOT_SMD:SOT-23","2","C2891804"
