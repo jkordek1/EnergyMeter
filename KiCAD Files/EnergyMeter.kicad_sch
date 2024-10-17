@@ -7022,7 +7022,7 @@
 		)
 		(uuid "2fd56c61-ae62-4a98-b860-ba3cd4760d07")
 	)
-	(text "TO-DO:\n- sklopka umjesto jumpera\n- Galvanski odvojiti GNDove (dodati optocouplere)\n- Pinovi serijske kom. i PF-a za debugiranje\n- relej?\n- ulaz za temp. senzor?"
+	(text "TO-DO:\n- sklopka umjesto jumpera\n- Galvanski odvojiti GNDove/napajanja\n- Dodati optocouplere\n- Maknuti LogicLevelConverter\n- Pinovi serijske kom. i PF-a za debugiranje\n- relej?\n- ulaz za temp. senzor?"
 		(exclude_from_sim no)
 		(at 192.786 145.288 0)
 		(effects
