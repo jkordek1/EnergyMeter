@@ -3463,7 +3463,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Switching:LNK304P"
+		(symbol "Regulator_Switching:LNK304G"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3478,7 +3478,7 @@
 					)
 				)
 			)
-			(property "Value" "LNK304P"
+			(property "Value" "LNK304G"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -3486,7 +3486,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DIP:PowerIntegrations_PDIP-8B"
+			(property "Footprint" "Package_DIP:PowerIntegrations_SMD-8B"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3505,7 +3505,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "LinkSwitch-TN Family, 170mA Output Current, DIP-8B"
+			(property "Description" "LinkSwitch-TN Family, 170mA Output Current, SMD-8B"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3523,7 +3523,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "PowerIntegrations?PDIP?8B*"
+			(property "ki_fp_filters" "PowerIntegrations?SMD?8B*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3532,7 +3532,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LNK304P_0_1"
+			(symbol "LNK304G_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -3545,7 +3545,7 @@
 					)
 				)
 			)
-			(symbol "LNK304P_1_1"
+			(symbol "LNK304G_1_1"
 				(pin power_in line
 					(at 10.16 0 180)
 					(length 2.54)
@@ -8670,17 +8670,6 @@
 		)
 		(uuid "2fd56c61-ae62-4a98-b860-ba3cd4760d07")
 	)
-	(text "TO-DO:\n- LNK304 non-isolating PSU\n- paziti na GND-ove, N treba biti spojen na GND od senzora\n- LCSC part # koji nedostaju\n- PC817 THT footprint\n- sklopka footprint\n- test point footprinti\n- provjeriti footprinte"
-		(exclude_from_sim no)
-		(at 220.218 174.752 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3facbadf-cdb6-4e57-ab7e-3cb43fe1ef02")
-	)
 	(text "12V\n120mA\noutput"
 		(exclude_from_sim no)
 		(at 274.066 56.896 0)
@@ -9423,7 +9412,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C105877"
+		(property "LCSC Part #" "C137592"
 			(at 238.76 55.88 0)
 			(effects
 				(font
@@ -9448,81 +9437,11 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 223.52 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0de8be15-4d36-4069-b0dd-646413e40ad7")
-		(property "Reference" "C5"
-			(at 226.06 60.9662 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 226.06 63.5062 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 223.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2bf0fae8-7d18-487d-a9b4-9389974478be")
-		)
-		(pin "1"
-			(uuid "ba86d72d-84ac-445e-bee0-78f1600d354e")
-		)
-		(instances
-			(project ""
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 54.61 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9545,7 +9464,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 49.53 148.59 0)
 			(effects
 				(font
@@ -10015,6 +9934,85 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 223.52 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27569db0-b10a-4832-bf45-f5cd20d4472b")
+		(property "Reference" "C5"
+			(at 226.06 60.9662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 226.06 63.5062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 223.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 223.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C599848"
+			(at 223.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d09fc2e-6d74-4432-9ebb-35d55f75af53")
+		)
+		(pin "2"
+			(uuid "acfff405-6379-4de0-b3ca-1b9b401b4ada")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 90.17 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10093,17 +10091,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 208.28 31.75 0)
+		(lib_id "Device:D_Small")
+		(at 260.35 62.23 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2fff2990-f9a5-4e70-b002-c3abf9922387")
-		(property "Reference" "C17"
-			(at 210.82 30.4862 0)
+		(uuid "328af397-458c-4fcc-a7fa-7c16dcca2b53")
+		(property "Reference" "D4"
+			(at 262.89 60.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10111,8 +10109,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 210.82 33.0262 0)
+		(property "Value" "US1JHE3"
+			(at 262.89 63.4999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10120,8 +10118,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 208.28 31.75 0)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 260.35 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10130,7 +10128,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 31.75 0)
+			(at 260.35 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10138,8 +10136,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 208.28 31.75 0)
+		(property "Description" "Diode, small symbol"
+			(at 260.35 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10147,8 +10145,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C599848"
-			(at 208.28 31.75 0)
+		(property "Sim.Device" "D"
+			(at 260.35 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 260.35 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C142585"
+			(at 260.35 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10157,15 +10173,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3449efc0-f715-48a9-aadc-6b5c55815278")
+			(uuid "4a43dd09-b942-454d-919a-e9d5cfbc86c4")
 		)
 		(pin "2"
-			(uuid "4732597b-916c-46dc-99ca-f1a4a82fb578")
+			(uuid "d0570662-fc82-47c7-8459-441a873a5da6")
 		)
 		(instances
 			(project "EnergyMeter"
 				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "C17")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -10351,7 +10367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_Elec_10x10.2"
 			(at 256.54 77.47 0)
 			(effects
 				(font
@@ -10370,6 +10386,15 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 256.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C5158069"
 			(at 256.54 77.47 0)
 			(effects
 				(font
@@ -10523,7 +10548,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C105877"
+		(property "LCSC Part #" "C844842"
 			(at 276.86 77.47 0)
 			(effects
 				(font
@@ -10716,7 +10741,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin"
 			(at 62.23 146.05 0)
 			(effects
 				(font
@@ -10735,6 +10760,15 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.23 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C54948"
 			(at 62.23 146.05 0)
 			(effects
 				(font
@@ -11281,6 +11315,85 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 246.38 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "576d9a82-1b21-44e9-803b-cab7e11216ee")
+		(property "Reference" "C18"
+			(at 248.92 30.4862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 248.92 33.0262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 246.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 246.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2174822"
+			(at 246.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f23453d3-0538-4b39-a5ec-f0844b97206d")
+		)
+		(pin "2"
+			(uuid "2b7c0daa-343d-4529-9e81-5f2653d19157")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 218.44 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11438,6 +11551,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 208.28 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c4099d0-1ab4-4f8a-92fa-6733db59278b")
+		(property "Reference" "C17"
+			(at 210.82 30.4862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 210.82 33.0262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 208.28 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 208.28 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2174822"
+			(at 208.28 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67c5e85b-611a-4b56-8694-07c791420726")
+		)
+		(pin "2"
+			(uuid "111d1c22-ad58-4059-9543-2c6cb022cd7a")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 27.94 140.97 0)
 		(unit 1)
@@ -11515,6 +11707,240 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
+		(at 251.46 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e8898c8-c5eb-4a9d-a8be-165bcbb8ad5c")
+		(property "Reference" "L2"
+			(at 251.46 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1mH"
+			(at 251.46 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-80xx_HandSoldering"
+			(at 251.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 251.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C19190456"
+			(at 251.46 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a030b3e-81a8-4687-a09b-35740b23ff95")
+		)
+		(pin "2"
+			(uuid "ebc1c18d-e4a4-4e10-bc99-1fc02c958bdf")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 189.23 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6259d4e4-89a5-463e-a637-02d7f8337699")
+		(property "Reference" "C4"
+			(at 191.77 75.6538 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7 / 400V"
+			(at 191.77 78.1938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
+			(at 189.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 189.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C250872"
+			(at 189.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0700d32-08a6-4818-8920-96ac342859c9")
+		)
+		(pin "2"
+			(uuid "43bd3950-61f6-48e1-88c3-08f3ed181a9b")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "639928e5-d868-4c56-bccf-a1bfd148010f")
+		(property "Reference" "R24"
+			(at 53.34 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 53.34 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 50.8 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 50.8 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C105877"
+			(at 50.8 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "539af9fa-c332-439c-a6b6-3b9a91b46878")
+		)
+		(pin "1"
+			(uuid "81f11468-7622-4bf3-a7ce-a4786df013ba")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
 		(at 180.34 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11538,7 +11964,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-80xx_HandSoldering"
 			(at 180.34 68.58 0)
 			(effects
 				(font
@@ -11558,6 +11984,15 @@
 		)
 		(property "Description" "Inductor, small symbol"
 			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C19190456"
+			(at 180.34 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11820,76 +12255,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
-		(at 189.23 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c12d64a-5691-45e9-bb53-acdbcd06a497")
-		(property "Reference" "C4"
-			(at 191.77 75.6538 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4u7 / 400V"
-			(at 191.77 78.1938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 189.23 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 189.23 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb39eb6a-e0e4-4cbf-8e63-e3179c9e5c95")
-		)
-		(pin "2"
-			(uuid "f08a08e3-9d2e-4d90-8785-dc65eecabe0c")
-		)
-		(instances
-			(project "EnergyMeter"
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
 		(at 180.34 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12110,7 +12475,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 50V"
+		(property "Value" "22u / 50V"
 			(at 246.38 63.5062 0)
 			(effects
 				(font
@@ -12119,7 +12484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 243.84 62.23 0)
 			(effects
 				(font
@@ -12138,6 +12503,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C784103"
 			(at 243.84 62.23 0)
 			(effects
 				(font
@@ -12400,7 +12774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
 			(at 171.45 77.47 0)
 			(effects
 				(font
@@ -12427,6 +12801,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C250872"
+			(at 171.45 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "934a2804-03e2-4b76-a202-547a639d3a49")
 		)
@@ -12437,6 +12820,99 @@
 			(project ""
 				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:LNK304G")
+		(at 212.09 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a26f2db-2180-4421-aca6-7c98981202c4")
+		(property "Reference" "U1"
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LNK304G"
+			(at 212.09 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:PowerIntegrations_SMD-8B"
+			(at 212.09 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.powerint.com/sites/default/files/product-docs/lnk302_304-306.pdf"
+			(at 212.09 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LinkSwitch-TN Family, 170mA Output Current, SMD-8B"
+			(at 212.09 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C408815"
+			(at 212.09 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "ca7ec575-a80e-44b8-846e-e5a3afe99697")
+		)
+		(pin "5"
+			(uuid "7c80fa8a-1f31-4118-aa4f-798ee9494f8e")
+		)
+		(pin "3"
+			(uuid "a7a8aa58-eee8-4740-9855-d8658314152d")
+		)
+		(pin "4"
+			(uuid "6213062e-2b8b-40ab-81b7-587701a10de0")
+		)
+		(pin "1"
+			(uuid "5f1396ea-090d-417f-a00f-da2a6d094b95")
+		)
+		(pin "7"
+			(uuid "88ee18e5-bfff-46cf-9222-afdb9e77a816")
+		)
+		(pin "2"
+			(uuid "9701ebae-aedf-4b60-91dc-34a1f8a38398")
+		)
+		(instances
+			(project ""
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -12746,82 +13222,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 50.8 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8134843d-c59f-4599-a8bd-567f70c42ceb")
-		(property "Reference" "R24"
-			(at 53.848 139.954 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 54.356 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 50.8 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 50.8 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C95781"
-			(at 50.8 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b8480f13-5838-45ec-baa2-0cbf774f7d4a")
-		)
-		(pin "1"
-			(uuid "3c86fbb1-d3f2-4475-80b2-036a7e04719d")
-		)
-		(instances
-			(project "EnergyMeter"
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND2")
 		(at 50.8 152.4 0)
 		(unit 1)
@@ -12956,6 +13356,85 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 50.8 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "857f141f-8a17-4691-a7a7-36d616e553fd")
+		(property "Reference" "R18"
+			(at 53.34 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 53.34 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C105877"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f9eb820-02fa-4a4a-b038-fca03316ceb3")
+		)
+		(pin "1"
+			(uuid "329a061c-5423-4e72-a749-d305d2f2625a")
+		)
+		(instances
+			(project "EnergyMeter"
+				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 233.68 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13009,7 +13488,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C105877"
+		(property "LCSC Part #" "C2091315"
 			(at 233.68 62.23 0)
 			(effects
 				(font
@@ -13346,7 +13825,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
+		(property "Value" "100uF"
 			(at 167.64 32.4738 0)
 			(effects
 				(font
@@ -13622,7 +14101,7 @@
 		(at 54.61 180.34 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13645,7 +14124,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 49.53 180.34 0)
 			(effects
 				(font
@@ -14160,89 +14639,6 @@
 			(project ""
 				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:LNK304P")
-		(at 212.09 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a41a6604-39d6-4566-8ff7-3e217b79a426")
-		(property "Reference" "U1"
-			(at 212.09 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LNK304P"
-			(at 212.09 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:PowerIntegrations_PDIP-8B"
-			(at 212.09 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.powerint.com/sites/default/files/product-docs/lnk302_304-306.pdf"
-			(at 212.09 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "LinkSwitch-TN Family, 170mA Output Current, DIP-8B"
-			(at 212.09 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "0ca65ff9-4d59-4ccd-bda4-94c33efeaa44")
-		)
-		(pin "1"
-			(uuid "5faaae79-7d34-47bc-b669-0509f3479b1f")
-		)
-		(pin "3"
-			(uuid "6b073fce-4bcc-4918-add9-9fec26ac730f")
-		)
-		(pin "2"
-			(uuid "90b58b63-370c-4654-8ebf-c768d63b2065")
-		)
-		(pin "5"
-			(uuid "84be7656-03c1-4bad-bc09-8e1dd1097731")
-		)
-		(pin "4"
-			(uuid "bfc3c266-b4df-4fe5-af2e-abf7ff56e7f2")
-		)
-		(pin "8"
-			(uuid "3b8ad740-4d1f-49b3-948d-53c0bc8b1d68")
-		)
-		(instances
-			(project ""
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -14830,73 +15226,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 251.46 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b8833ce5-f3d5-4b8c-ba8c-a771a957bc20")
-		(property "Reference" "L2"
-			(at 251.46 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1mH"
-			(at 251.46 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 251.46 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor, small symbol"
-			(at 251.46 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f5f6e1a-f402-4a9b-bb21-ff033eb69d35")
-		)
-		(pin "2"
-			(uuid "f8087009-df58-47c3-b7e3-56e272af26e4")
-		)
-		(instances
-			(project "EnergyMeter"
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND1")
 		(at 227.33 39.37 0)
 		(unit 1)
@@ -15054,7 +15383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 139.7 149.86 0)
 			(effects
 				(font
@@ -15284,7 +15613,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "UF4005"
+		(property "Value" "US1JHE3"
 			(at 241.3 78.7399 90)
 			(effects
 				(font
@@ -15293,7 +15622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 238.76 77.47 90)
 			(effects
 				(font
@@ -15331,6 +15660,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 238.76 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C142585"
+			(at 238.76 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15765,6 +16103,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C2833075"
+			(at 40.64 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "e95c8a6d-de2c-489a-9487-f77f9b97d093")
 		)
@@ -15781,94 +16128,6 @@
 			(project ""
 				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 260.35 62.23 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e168b54e-293b-46bf-9231-695df99acfee")
-		(property "Reference" "D4"
-			(at 262.89 60.9599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4005GP"
-			(at 262.89 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 260.35 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 260.35 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 260.35 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 260.35 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 260.35 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a71a008-6436-4f20-8736-952da9866143")
-		)
-		(pin "2"
-			(uuid "a486d465-c24a-4ad9-8270-a159a41ee830")
-		)
-		(instances
-			(project "EnergyMeter"
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -16069,6 +16328,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C22459281"
+			(at 233.68 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "336fdce6-4fb2-49e1-993f-4e7a6f46ba71")
 		)
@@ -16167,85 +16435,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 246.38 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e450eeab-9d3d-4bba-bffb-f57d386abd15")
-		(property "Reference" "C18"
-			(at 248.92 30.4862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 248.92 33.0262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 246.38 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 246.38 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C599848"
-			(at 246.38 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "685da913-3c5f-4e5b-9f50-0e6241f62efc")
-		)
-		(pin "2"
-			(uuid "df2abca4-0a93-46e4-b5f7-d31135793829")
-		)
-		(instances
-			(project "EnergyMeter"
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 118.11 185.42 0)
 		(unit 1)
@@ -16307,82 +16496,6 @@
 			(project "EnergyMeter"
 				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
 					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 50.8 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f0ee16d9-62bb-4196-a9c2-beba88b3a879")
-		(property "Reference" "R18"
-			(at 53.848 171.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 54.356 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 50.8 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 50.8 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C95781"
-			(at 50.8 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8aab726b-dbb6-44da-ad1f-0fe9a7e980fe")
-		)
-		(pin "1"
-			(uuid "9c8663fd-5974-4265-9df3-cd6eeb39ebb7")
-		)
-		(instances
-			(project "EnergyMeter"
-				(path "/dcb2e141-5961-4148-85a8-dea6d8173eed"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -16512,6 +16625,15 @@
 			)
 		)
 		(property "Description" "DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4"
+			(at 40.64 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2833075"
 			(at 40.64 180.34 0)
 			(effects
 				(font
